@@ -10,6 +10,10 @@ public class ChoicesHandler : MonoBehaviour {
 	public string player1Horn, player1Tail;
 	public string player2Horn, player2Tail;
 
+	//those are the info we'll actually keep in the "gameplay" scene
+	public int player1HornParsed, player1TailParsed;
+	public int player2HornParsed, player2TailParsed;
+
 	//just temporary info for easier data handling
 	private string hornChoice, tailChoice;
 	private int player;
@@ -50,7 +54,37 @@ public class ChoicesHandler : MonoBehaviour {
 	public int CalculateCollision()
 	{
 		//Rock = 0, Paper = 1, Scissors = 2
-		//return scoreHandler.CalculateCollision (player1Horn, player1Tail, player2Horn, player2Tail);
-		return -1;
+		ParseData();
+	
+		CleanTmpData ();
+
+		return scoreHandler.CalculateCollision (player1HornParsed, player1TailParsed, player2HornParsed, player2TailParsed);
+	}
+
+	private void ParseData()
+	{
+		player1HornParsed = ParseString (player1Horn);
+		player1TailParsed = ParseString (player1Tail);
+
+		player2HornParsed = ParseString (player2Horn);
+		player2TailParsed = ParseString (player2Tail);
+	}
+
+	//TODO: adapt to colors instead of rps
+	private int ParseString(string s)
+	{
+		if (s.Equals ("Rock"))
+			return 0;
+		else if (s.Equals ("Paper"))
+			return 1;
+		else //if(s.Equals("Scissors"))
+			return 2;
+	}
+
+
+	public void CleanTmpData()
+	{
+		hornChoice = null;
+		tailChoice = null;
 	}
 }

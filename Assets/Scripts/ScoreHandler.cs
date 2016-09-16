@@ -34,7 +34,7 @@ public class ScoreHandler {
 			if (player2 == 0)
 				tempScore2++;
 			if (player2 == 1)
-				tempScore2++;
+				tempScore1++;
 			//if (player2 == 2)
 			//	nothing
 			break;
