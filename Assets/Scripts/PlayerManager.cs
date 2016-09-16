@@ -9,6 +9,11 @@ public class PlayerManager : MonoBehaviour {
 		Debug.Log(GameObject.Find ("ChoiceHandler").GetComponent<ChoicesHandler> ().CalculateCollision ());
 	}
 
+	public void OnTriggerExit2D(Collider2D other)
+	{
+		GameObject.Find ("ChoiceHandler").GetComponent<ChoicesHandler> ().MatchEnd ();
+	}
+
 	// Use this for initialization
 	void Start () {
 	

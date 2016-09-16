@@ -18,6 +18,9 @@ public class ChoicesHandler : MonoBehaviour {
 	private string hornChoice, tailChoice;
 	private int player;
 
+	//Used to avoid the collision function to be called more than once per collision
+	private bool collisionDone = false;
+
 	void Awake() {
 		DontDestroyOnLoad(gameObject);
 		player = 1;
@@ -46,6 +49,7 @@ public class ChoicesHandler : MonoBehaviour {
 			} else {
 				player2Horn = hornChoice;
 				player2Tail = tailChoice;
+				collisionDone = false;
 				SceneManager.LoadScene ("_MainScene");
 			}
 		}
@@ -53,14 +57,19 @@ public class ChoicesHandler : MonoBehaviour {
 
 	public int CalculateCollision()
 	{
-		//Rock = 0, Paper = 1, Scissors = 2
-		ParseData();
-	
-		CleanTmpData ();
+		if (!collisionDone) {
+			collisionDone = true;
 
-		return scoreHandler.CalculateCollision (player1HornParsed, player1TailParsed, player2HornParsed, player2TailParsed);
+			ParseData ();
+	
+			CleanTmpData ();
+
+			return scoreHandler.CalculateCollision (player1HornParsed, player1TailParsed, player2HornParsed, player2TailParsed);
+		}
+		return -1;
 	}
 
+	//Rock = 0, Paper = 1, Scissors = 2
 	private void ParseData()
 	{
 		player1HornParsed = ParseString (player1Horn);
@@ -80,11 +89,19 @@ public class ChoicesHandler : MonoBehaviour {
 		else //if(s.Equals("Scissors"))
 			return 2;
 	}
-
-
+		
 	public void CleanTmpData()
 	{
 		hornChoice = null;
 		tailChoice = null;
+	}
+
+	public void MatchEnd()
+	{
+		if (scoreHandler.gameOver)
+			Debug.Log ("It's over.");
+		else {
+			SceneManager.LoadScene ("RockPaperScissors");
+		}
 	}
 }

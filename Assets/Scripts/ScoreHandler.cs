@@ -9,6 +9,9 @@ public class ScoreHandler {
 	int tempScore1 = 0;
 	int tempScore2 = 0;
 
+	public bool gameOver = false;
+	public int winner = 0;
+
 	//Rock = 0, Paper = 1, Scissors = 2
 
 	public void rps(int player1, int player2)
@@ -51,6 +54,8 @@ public class ScoreHandler {
 		player1Score += tempScore1;
 		player2Score += tempScore2;
 
+		CheckGameEnd();
+
 		if (tempScore1 > tempScore2)
 			result = 1;
 		else if (tempScore1 == tempScore2)
@@ -62,6 +67,20 @@ public class ScoreHandler {
 		tempScore2 = 0;
 
 		return result;
+	}
+
+	public void CheckGameEnd() 
+	{
+		if (player1Score >= 7 && player1Score > player2Score) {
+			//Debug.Log ("player1Won");
+			gameOver = true;
+			winner = 1;
+		}
+		if (player2Score >= 7 && player2Score > player1Score) {
+			//Debug.Log ("player2Won");
+			gameOver = true;
+			winner = 2;
+		}
 	}
 }
 
