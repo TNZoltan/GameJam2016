@@ -4,6 +4,8 @@ using UnityEngine.SceneManagement;
 
 public class ChoicesHandler : MonoBehaviour {
 
+	public ScoreHandler scoreHandler;
+
 	//those are the info we'll actually keep in the "gameplay" scene
 	public string player1Horn, player1Tail;
 	public string player2Horn, player2Tail;
@@ -15,6 +17,7 @@ public class ChoicesHandler : MonoBehaviour {
 	void Awake() {
 		DontDestroyOnLoad(gameObject);
 		player = 1;
+		scoreHandler = new ScoreHandler ();
 	}
 
 	public void SetHornChoice(string choice)
@@ -42,5 +45,12 @@ public class ChoicesHandler : MonoBehaviour {
 				SceneManager.LoadScene ("_MainScene");
 			}
 		}
+	}
+
+	public int CalculateCollision()
+	{
+		//Rock = 0, Paper = 1, Scissors = 2
+		//return scoreHandler.CalculateCollision (player1Horn, player1Tail, player2Horn, player2Tail);
+		return -1;
 	}
 }
