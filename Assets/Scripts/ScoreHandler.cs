@@ -3,8 +3,8 @@ using System.Collections;
 
 public class ScoreHandler {
 
-	int player1Score = 0;
-	int player2Score = 0;
+	public int player1Score = 0;
+	public int player2Score = 0;
 
 	int tempScore1 = 0;
 	int tempScore2 = 0;
@@ -20,24 +20,37 @@ public class ScoreHandler {
 		case 0:
 			//if(player2 == 0)
 			//	nothing
-			if (player2 == 1)
+			if (player2 == 1) {
 				tempScore2++;
-			if (player2 == 2)
+				Debug.Log ("Rock is beaten by paper");
+			}
+			if (player2 == 2) {
 				tempScore1++;
-			break;
+				Debug.Log ("Rock beats scissors");
+			}
+				break;
 		case 1:
-			if (player2 == 0)
+			if (player2 == 0) {
 				tempScore1++;
+				Debug.Log ("Paper beats rock");
+			}
 			//if (player2 == 1)
 			//	nothing
-			if (player2 == 2)
+			if (player2 == 2) {
 				tempScore2++;
+				Debug.Log ("Paper is beaten by scissors");
+			}
+
 			break;
 		case 2:
-			if (player2 == 0)
+			if (player2 == 0) {
 				tempScore2++;
-			if (player2 == 1)
+				Debug.Log ("Scissors is beaten by rock");
+			}
+			if (player2 == 1) {
 				tempScore1++;
+				Debug.Log ("Scissors beat paper");
+			}
 			//if (player2 == 2)
 			//	nothing
 			break;

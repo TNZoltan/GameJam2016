@@ -6,7 +6,10 @@ public class PlayerManager : MonoBehaviour {
 
 	public void OnTriggerEnter2D(Collider2D other)
 	{
-		Debug.Log(GameObject.Find ("ChoiceHandler").GetComponent<ChoicesHandler> ().CalculateCollision ());
+
+		int a = GameObject.Find ("ChoiceHandler").GetComponent<ChoicesHandler> ().CalculateCollision ();
+		if (a!=-1)
+			Debug.Log(a);
 	}
 
 	public void OnTriggerExit2D(Collider2D other)

@@ -10,7 +10,6 @@ public class ChoicesHandler : MonoBehaviour {
 	public string player1Horn, player1Tail;
 	public string player2Horn, player2Tail;
 
-	//those are the info we'll actually keep in the "gameplay" scene
 	public int player1HornParsed, player1TailParsed;
 	public int player2HornParsed, player2TailParsed;
 
@@ -25,6 +24,7 @@ public class ChoicesHandler : MonoBehaviour {
 		DontDestroyOnLoad(gameObject);
 		player = 1;
 		scoreHandler = new ScoreHandler ();
+		SceneManager.LoadScene ("RockPaperScissors");
 	}
 
 	public void SetHornChoice(string choice)
@@ -50,6 +50,7 @@ public class ChoicesHandler : MonoBehaviour {
 				player2Horn = hornChoice;
 				player2Tail = tailChoice;
 				collisionDone = false;
+				player = 1;
 				SceneManager.LoadScene ("_MainScene");
 			}
 		}
@@ -101,6 +102,7 @@ public class ChoicesHandler : MonoBehaviour {
 		if (scoreHandler.gameOver)
 			Debug.Log ("It's over.");
 		else {
+			collisionDone = false;
 			SceneManager.LoadScene ("RockPaperScissors");
 		}
 	}
