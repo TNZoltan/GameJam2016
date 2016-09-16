@@ -186,7 +186,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4000012524197894, guid: f0ee9e7626e37a640aeac756fea0dee2, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -8
       objectReference: {fileID: 0}
     - target: {fileID: 4000012524197894, guid: f0ee9e7626e37a640aeac756fea0dee2, type: 2}
       propertyPath: m_LocalPosition.y
@@ -215,6 +215,96 @@ Prefab:
     - target: {fileID: 4000012524197894, guid: f0ee9e7626e37a640aeac756fea0dee2, type: 2}
       propertyPath: m_RootOrder
       value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: f0ee9e7626e37a640aeac756fea0dee2, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1 &642688844 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1000011524702480, guid: f0ee9e7626e37a640aeac756fea0dee2,
+    type: 2}
+  m_PrefabInternal: {fileID: 612753008}
+--- !u!114 &642688845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 642688844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1292cd2f41253e246bf706e854581889, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0.1
+  direction: right
+--- !u!1 &1632799627 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1000011524702480, guid: f0ee9e7626e37a640aeac756fea0dee2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1725442649}
+--- !u!114 &1632799628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1632799627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1292cd2f41253e246bf706e854581889, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0.1
+  direction: left
+--- !u!1001 &1725442649
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4000012524197894, guid: f0ee9e7626e37a640aeac756fea0dee2, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012524197894, guid: f0ee9e7626e37a640aeac756fea0dee2, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012524197894, guid: f0ee9e7626e37a640aeac756fea0dee2, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012524197894, guid: f0ee9e7626e37a640aeac756fea0dee2, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012524197894, guid: f0ee9e7626e37a640aeac756fea0dee2, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012524197894, guid: f0ee9e7626e37a640aeac756fea0dee2, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012524197894, guid: f0ee9e7626e37a640aeac756fea0dee2, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012524197894, guid: f0ee9e7626e37a640aeac756fea0dee2, type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011524702480, guid: f0ee9e7626e37a640aeac756fea0dee2, type: 2}
+      propertyPath: m_Name
+      value: Player (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012524197894, guid: f0ee9e7626e37a640aeac756fea0dee2, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012524197894, guid: f0ee9e7626e37a640aeac756fea0dee2, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f0ee9e7626e37a640aeac756fea0dee2, type: 2}
