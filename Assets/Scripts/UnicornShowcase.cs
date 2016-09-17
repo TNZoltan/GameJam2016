@@ -3,8 +3,8 @@ using System.Collections;
 
 public class UnicornShowcase : MonoBehaviour {
 
-	private GameObject hornPosition;
-	private GameObject tailPosition;
+	//private GameObject hornPosition;
+	//private GameObject tailPosition;
 
 	public GameObject horn;
 	public GameObject tail;
@@ -16,19 +16,19 @@ public class UnicornShowcase : MonoBehaviour {
 	private GameObject hornParticle = new GameObject ();
 	private GameObject tailParticle = new GameObject ();
 
-//	public void Start() {
-//		hornPosition.transform.position = horn.transform.position;
-//		tailPosition.transform.position = tail.transform.position;
-//	}
-//
-//	public void Update() {
-//		if (hornParticle!=null && hornParticle.name.Contains ("Water")) {
-//			hornParticle.transform.position = hornParticle.transform.position + new Vector3 (0, 10, 0);
-//		} else if (hornParticle!=null){
-//			hornParticle.transform.position = hornPosition.transform.position;
-//		}
-//
-//	}
+	//	public void Start() {
+	//		hornPosition.transform.position = horn.transform.position;
+	//		tailPosition.transform.position = tail.transform.position;
+	//	}
+	//
+	//	public void Update() {
+	//		if (hornParticle!=null && hornParticle.name.Contains ("Water")) {
+	//			hornParticle.transform.position = hornParticle.transform.position + new Vector3 (0, 10, 0);
+	//		} else if (hornParticle!=null){
+	//			hornParticle.transform.position = hornPosition.transform.position;
+	//		}
+	//
+	//	}
 
 	public void SetHornParticle(string particle) 
 	{
