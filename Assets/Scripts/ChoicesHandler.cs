@@ -53,6 +53,7 @@ public class ChoicesHandler : MonoBehaviour {
 				player2Tail = tailChoice;
 				collisionDone = false;
 				player = 1;
+				ParseData ();
 				SceneManager.LoadScene ("_MainScene");
 			}
 		}
@@ -63,7 +64,7 @@ public class ChoicesHandler : MonoBehaviour {
 		if (!collisionDone) {
 			collisionDone = true;
 
-			ParseData ();
+			//ParseData ();
 	
 			CleanTmpData ();
 
