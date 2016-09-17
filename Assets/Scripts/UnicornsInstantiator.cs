@@ -26,11 +26,11 @@ public class UnicornsInstantiator : MonoBehaviour {
 			o.transform.position = player1.transform.GetChild(2).position;
 			break;
 		case 1:
-			GameObject o2 = (GameObject)Instantiate (particleWind, player1.transform.GetChild (2));	
+			GameObject o2 = (GameObject)Instantiate (particleWater, player1.transform.GetChild (2));	
 			o2.transform.position = player1.transform.GetChild(2).position;
 			break;
 		case 2:
-			GameObject o3 = (GameObject)Instantiate (particleWater, player1.transform.GetChild (2));	
+			GameObject o3 = (GameObject)Instantiate (particleWind, player1.transform.GetChild (2));	
 			o3.transform.position = player1.transform.GetChild(2).position;
 			break;
 		}
@@ -41,11 +41,11 @@ public class UnicornsInstantiator : MonoBehaviour {
 			o.transform.position = player1.transform.GetChild(1).position;
 			break;
 		case 1:
-			GameObject o2 = (GameObject)Instantiate (particleWind, player1.transform.GetChild (1));	
+			GameObject o2 = (GameObject)Instantiate (particleWater, player1.transform.GetChild (1));	
 			o2.transform.position = player1.transform.GetChild(1).position;
 			break;
 		case 2:
-			GameObject o3 = (GameObject)Instantiate (particleWater, player1.transform.GetChild (1));	
+			GameObject o3 = (GameObject)Instantiate (particleWind, player1.transform.GetChild (1));	
 			o3.transform.position = player1.transform.GetChild(1).position;
 			break;
 		}
@@ -56,11 +56,11 @@ public class UnicornsInstantiator : MonoBehaviour {
 			o.transform.position = player2.transform.GetChild(2).position;
 			break;
 		case 1:
-			GameObject o2 = (GameObject)Instantiate (particleWind, player2.transform.GetChild (2));	
+			GameObject o2 = (GameObject)Instantiate (particleWater, player2.transform.GetChild (2));	
 			o2.transform.position = player2.transform.GetChild(2).position;
 			break;
 		case 2:
-			GameObject o3 = (GameObject)Instantiate (particleWater, player2.transform.GetChild (2));	
+			GameObject o3 = (GameObject)Instantiate (particleWind, player2.transform.GetChild (2));	
 			o3.transform.position = player2.transform.GetChild(2).position;
 			break;
 		}
@@ -71,11 +71,11 @@ public class UnicornsInstantiator : MonoBehaviour {
 			o.transform.position = player2.transform.GetChild(1).position;
 			break;
 		case 1:
-			GameObject o2 = (GameObject)Instantiate (particleWind, player2.transform.GetChild (1));	
+			GameObject o2 = (GameObject)Instantiate (particleWater, player2.transform.GetChild (1));	
 			o2.transform.position = player2.transform.GetChild(1).position;
 			break;
 		case 2:
-			GameObject o3 = (GameObject)Instantiate (particleWater, player2.transform.GetChild (1));	
+			GameObject o3 = (GameObject)Instantiate (particleWind, player2.transform.GetChild (1));	
 			o3.transform.position = player2.transform.GetChild(1).position;
 			break;
 		}
