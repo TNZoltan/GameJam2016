@@ -15,11 +15,10 @@ public class Inflater : MonoBehaviour {
 	void Update () {
 		if (!locked) {
 			this.transform.localScale += new Vector3(speed,speed,0);
-			if (name == "EndRoundThing") {
+			if (name == "EndRoundThing" ) {
 				Color temp = GetComponent<Image>().color;
-				temp.a+=1;
+				temp.a+=0.01f;
 				GetComponent<Image>().color = temp;
-
 			}
 		}
 	}

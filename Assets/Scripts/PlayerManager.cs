@@ -9,6 +9,10 @@ public class PlayerManager : MonoBehaviour {
 	{
 		GameObject.Find ("EndRoundThing").GetComponent<Inflater> ().locked = false;
 		GameObject.Find ("EndRoundThing").GetComponent<Image> ().enabled = true;
+		Color temp = GameObject.Find ("EndRoundThing").GetComponent<Image> ().color;
+		temp.a=0;
+		GameObject.Find ("EndRoundThing").GetComponent<Image> ().color =  temp;
+
 		GameObject.Find ("EndRoundText").GetComponent<Text> ().enabled = true;
 		GameObject.Find ("EndRoundText").GetComponent<Inflater> ().locked = false;
 		if (GetComponent<GoToDirectionX>().direction == "right")
