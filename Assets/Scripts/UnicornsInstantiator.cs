@@ -19,8 +19,8 @@ public class UnicornsInstantiator : MonoBehaviour {
 		player2 = players [Random.Range(0,players.Length-1)];
 
 		//Instantiate the players
-		player1 = (GameObject) Instantiate(player1, new Vector3(-8.5f,-2,0), Quaternion.identity);
-		player2 = (GameObject) Instantiate(player2, new Vector3(8.5f,-2,0), Quaternion.identity);
+		player1 = (GameObject) Instantiate(player1, new Vector3(-8.5f,-3f,0), Quaternion.identity);
+		player2 = (GameObject) Instantiate(player2, new Vector3(8.5f,-3f,0), Quaternion.identity);
 		player2.GetComponent<GoToDirectionX> ().direction = "left";
 		player2.transform.Rotate (new Vector3 (0, 180, 0));
 
