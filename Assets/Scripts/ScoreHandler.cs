@@ -22,34 +22,33 @@ public class ScoreHandler {
 			//	nothing
 			if (player2 == 1) {
 				tempScore2++;
-				Debug.Log ("Rock is beaten by paper");
+				//Debug.Log ("Rock is beaten by paper");
 			}
 			if (player2 == 2) {
 				tempScore1++;
-				Debug.Log ("Rock beats scissors");
+				//Debug.Log ("Rock beats scissors");
 			}
 				break;
 		case 1:
 			if (player2 == 0) {
 				tempScore1++;
-				Debug.Log ("Paper beats rock");
+				//Debug.Log ("Paper beats rock");
 			}
 			//if (player2 == 1)
 			//	nothing
 			if (player2 == 2) {
 				tempScore2++;
-				Debug.Log ("Paper is beaten by scissors");
+				//Debug.Log ("Paper is beaten by scissors");
 			}
-
 			break;
 		case 2:
 			if (player2 == 0) {
 				tempScore2++;
-				Debug.Log ("Scissors is beaten by rock");
+				//Debug.Log ("Scissors is beaten by rock");
 			}
 			if (player2 == 1) {
 				tempScore1++;
-				Debug.Log ("Scissors beat paper");
+				//Debug.Log ("Scissors beat paper");
 			}
 			//if (player2 == 2)
 			//	nothing

@@ -100,7 +100,8 @@ public class ChoicesHandler : MonoBehaviour {
 	public void MatchEnd()
 	{
 		if (scoreHandler.gameOver)
-			Debug.Log ("It's over.");
+			//Debug.Log ("It's over.");
+			SceneManager.LoadScene("MainMenu");
 		else {
 			collisionDone = false;
 			SceneManager.LoadScene ("RockPaperScissors");
