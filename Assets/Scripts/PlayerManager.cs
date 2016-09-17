@@ -15,6 +15,7 @@ public class PlayerManager : MonoBehaviour {
 			GetComponent<Rigidbody2D> ().AddForce (new Vector2 (int.MaxValue/10000000,1));
 		else
 			GetComponent<Rigidbody2D> ().AddForce (new Vector2 (-int.MaxValue/10000000,1));
+		GetComponent<AudioSource> ().Play ();
 	}
 
 	public void OnTriggerExit2D(Collider2D other)
