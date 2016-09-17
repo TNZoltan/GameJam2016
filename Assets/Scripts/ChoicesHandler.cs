@@ -4,6 +4,8 @@ using UnityEngine.SceneManagement;
 
 public class ChoicesHandler : MonoBehaviour {
 
+	public int roundWinner = -1;
+
 	public ScoreHandler scoreHandler;
 
 	//those are the info we'll actually keep in the "gameplay" scene
@@ -67,10 +69,10 @@ public class ChoicesHandler : MonoBehaviour {
 			//ParseData ();
 	
 			CleanTmpData ();
+			roundWinner = scoreHandler.CalculateCollision (player1HornParsed, player1TailParsed, player2HornParsed, player2TailParsed);
+		}		
+		return roundWinner;
 
-			return scoreHandler.CalculateCollision (player1HornParsed, player1TailParsed, player2HornParsed, player2TailParsed);
-		}
-		return -1;
 	}
 
 	//Rock = 0, Paper = 1, Scissors = 2

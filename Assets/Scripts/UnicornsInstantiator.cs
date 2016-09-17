@@ -85,14 +85,11 @@ public class UnicornsInstantiator : MonoBehaviour {
 			break;
 		}
 
-		if (GameObject.Find ("ChoiceHandler").GetComponent<ChoicesHandler> ().CalculateCollision () == 2) {
-			player2.GetComponent<Rigidbody2D> ().mass = int.MaxValue;	
-			//TODO: do something so that the player 2 is actually stronger than player1
+		//if (GameObject.Find ("ChoiceHandler").GetComponent<ChoicesHandler> ().CalculateCollision () == 2) {
+		//	player2.GetComponent<Rigidbody2D> ().mass = 4;
+		//	player2.GetComponent<GoToDirectionX>().speed += .4f;
+		//	//TODO: do something so that the player 2 is actually stronger than player1
 		}
 	}
 	
-	// Update is called once per frame
-	void Update () {
-	
-	}
-}
+

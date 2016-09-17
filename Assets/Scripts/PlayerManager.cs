@@ -11,7 +11,10 @@ public class PlayerManager : MonoBehaviour {
 		GameObject.Find ("EndRoundThing").GetComponent<Image> ().enabled = true;
 		GameObject.Find ("EndRoundText").GetComponent<Text> ().enabled = true;
 		GameObject.Find ("EndRoundText").GetComponent<Inflater> ().locked = false;
-		GetComponent<Rigidbody2D> ().AddForce (new Vector2 (int.MaxValue/10000000,1));
+		if (GetComponent<GoToDirectionX>().direction == "right")
+			GetComponent<Rigidbody2D> ().AddForce (new Vector2 (int.MaxValue/10000000,1));
+		else
+			GetComponent<Rigidbody2D> ().AddForce (new Vector2 (-int.MaxValue/10000000,1));
 	}
 
 	public void OnTriggerExit2D(Collider2D other)
