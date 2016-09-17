@@ -6,13 +6,19 @@ public class UnicornsInstantiator : MonoBehaviour {
 	public GameObject player1;
 	public GameObject player2;
 
+	public GameObject []players;
+
 	public GameObject particleFire;
 	public GameObject particleWind;
 	public GameObject particleWater;
 
 	// Use this for initialization
 	void Start () {
-	
+
+		player1 = players [Random.Range(0,players.Length-1)];
+		player2 = players [Random.Range(0,players.Length-1)];
+
+
 		//Instantiate the players
 		player1 = (GameObject) Instantiate(player1, new Vector3(-8.5f,0,0), Quaternion.identity);
 		player2 = (GameObject) Instantiate(player2, new Vector3(8.5f,0,0), Quaternion.identity);
