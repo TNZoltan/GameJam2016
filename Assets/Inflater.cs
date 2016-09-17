@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+using UnityEngine.UI;
 public class Inflater : MonoBehaviour {
 
 	public bool locked = true;
@@ -14,7 +14,6 @@ public class Inflater : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (!locked) {
-			GetComponent<SpriteRenderer> ().enabled = true;
 			this.transform.localScale += new Vector3(speed,speed,0);
 		}
 	}
