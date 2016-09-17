@@ -14,12 +14,13 @@ public class Inflater : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (!locked) {
-			this.transform.localScale += new Vector3(speed,speed,0);
-			if (name == "EndRoundThing" ) {
-				Color temp = GetComponent<Image>().color;
-				temp.a+=0.01f;
-				GetComponent<Image>().color = temp;
-			}
+			if (this.transform.localScale.x <= 1.7)
+				this.transform.localScale += new Vector3(speed,speed,0);
+			//if (name == "EndRoundThing" ) {
+			//	Color temp = GetComponent<Image>().color;
+			//	temp.a+=0.01f;
+			//	GetComponent<Image>().color = temp;
+			//}
 		}
 	}
 }

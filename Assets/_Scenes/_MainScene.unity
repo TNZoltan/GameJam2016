@@ -343,7 +343,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   locked: 1
-  speed: 0.05
+  speed: 0.03
 --- !u!114 &245552565
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2164,7 +2164,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   locked: 1
-  speed: 0.03
+  speed: 0.02
 --- !u!114 &1852296623
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2177,7 +2177,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
