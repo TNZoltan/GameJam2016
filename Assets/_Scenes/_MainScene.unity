@@ -601,8 +601,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4b6f7d3c09a5d445abd6db19cae7ab3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player1: {fileID: 1000011524702480, guid: f0ee9e7626e37a640aeac756fea0dee2, type: 2}
-  player2: {fileID: 1000011524702480, guid: f0ee9e7626e37a640aeac756fea0dee2, type: 2}
+  player1: {fileID: 1000011306485250, guid: 5645fca0d0a31474fb116edabd327374, type: 2}
+  player2: {fileID: 1000011306485250, guid: 5645fca0d0a31474fb116edabd327374, type: 2}
   particleFire: {fileID: 1000012613871728, guid: 5db27655e1445214ab8161ec314f236c,
     type: 2}
   particleWind: {fileID: 1000011216885444, guid: 7ff21d779b166dc4d9ee8a9366eb6655,

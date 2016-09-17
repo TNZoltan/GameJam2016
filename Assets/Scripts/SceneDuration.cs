@@ -5,7 +5,7 @@ using System.Threading;
 public class SceneDuration: MonoBehaviour {
 
 	ChoicesHandler ch;
-	public float timer = 2.5f;
+	public float timer = 3.5f;
 
 	// Use this for initialization
 	void Start () {
