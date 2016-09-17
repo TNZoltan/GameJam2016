@@ -105,6 +105,7 @@ public class ChoicesHandler : MonoBehaviour {
 	public void MatchEnd()
 	{
 		if (scoreHandler.gameOver) {
+			GetComponent<AudioSource> ().Play ();
 			scoreHandler.player1Score = 0;
 			scoreHandler.player2Score = 0;
 			scoreHandler.gameOver = false;
