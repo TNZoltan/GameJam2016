@@ -45,6 +45,8 @@ public class ChoicesHandler : MonoBehaviour {
 				player1Horn = hornChoice;
 				player1Tail = tailChoice;
 				player++;
+				hornChoice = null;
+				tailChoice = null;
 				SceneManager.LoadScene ("RockPaperScissors2");
 			} else {
 				player2Horn = hornChoice;
@@ -83,11 +85,11 @@ public class ChoicesHandler : MonoBehaviour {
 	//TODO: adapt to colors instead of rps
 	private int ParseString(string s)
 	{
-		if (s.Equals ("Rock"))
+		if (s.Equals ("Fire"))
 			return 0;
-		else if (s.Equals ("Paper"))
+		else if (s.Equals ("Water"))
 			return 1;
-		else //if(s.Equals("Scissors"))
+		else //if(s.Equals("Wind"))
 			return 2;
 	}
 		
