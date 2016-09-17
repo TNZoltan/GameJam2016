@@ -18,10 +18,9 @@ public class UnicornsInstantiator : MonoBehaviour {
 		player1 = players [Random.Range(0,players.Length-1)];
 		player2 = players [Random.Range(0,players.Length-1)];
 
-
 		//Instantiate the players
-		player1 = (GameObject) Instantiate(player1, new Vector3(-8.5f,0,0), Quaternion.identity);
-		player2 = (GameObject) Instantiate(player2, new Vector3(8.5f,0,0), Quaternion.identity);
+		player1 = (GameObject) Instantiate(player1, new Vector3(-8.5f,-2,0), Quaternion.identity);
+		player2 = (GameObject) Instantiate(player2, new Vector3(8.5f,-2,0), Quaternion.identity);
 		player2.GetComponent<GoToDirectionX> ().direction = "left";
 		player2.transform.Rotate (new Vector3 (0, 180, 0));
 
@@ -86,7 +85,10 @@ public class UnicornsInstantiator : MonoBehaviour {
 			break;
 		}
 
-	
+		if (GameObject.Find ("ChoiceHandler").GetComponent<ChoicesHandler> ().CalculateCollision () == 2) {
+			player2.GetComponent<Rigidbody2D> ().mass = int.MaxValue;	
+			//TODO: do something so that the player 2 is actually stronger than player1
+		}
 	}
 	
 	// Update is called once per frame
