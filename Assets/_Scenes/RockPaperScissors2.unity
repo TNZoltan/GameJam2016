@@ -188,6 +188,28 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 109835044}
+        m_MethodName: GetButtonInput
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Wind_tail
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 109835044}
+        m_MethodName: SetSprite
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &51981465
@@ -345,6 +367,12 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 109835042}
   m_Script: {fileID: 11500000, guid: 94fe08efafeed4041b76ee0324237ade, type: 3}
+--- !u!114 &109835044 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114000013189221818, guid: 3fc61c30ef2792d4dbb2333dc541c673,
+    type: 2}
+  m_PrefabInternal: {fileID: 109835042}
+  m_Script: {fileID: 11500000, guid: 1b9bb2b4467df7343b4b3a22136415fc, type: 3}
 --- !u!1 &180689338
 GameObject:
   m_ObjectHideFlags: 0
@@ -617,6 +645,28 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 433668479}
         m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 109835044}
+        m_MethodName: GetButtonInput
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Fire_tail
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 109835044}
+        m_MethodName: SetSprite
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1080,6 +1130,28 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 109835044}
+        m_MethodName: GetButtonInput
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Wind_horn
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 109835044}
+        m_MethodName: SetSprite
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &955783166
@@ -1364,6 +1436,28 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 109835044}
+        m_MethodName: GetButtonInput
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Fire_horn
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 109835044}
+        m_MethodName: SetSprite
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1096333404
@@ -1562,6 +1656,28 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1170859559}
         m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 109835044}
+        m_MethodName: GetButtonInput
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Water_horn
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 109835044}
+        m_MethodName: SetSprite
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2072,6 +2188,28 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1689206488}
         m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 109835044}
+        m_MethodName: GetButtonInput
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Water_tail
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 109835044}
+        m_MethodName: SetSprite
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

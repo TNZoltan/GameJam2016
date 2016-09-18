@@ -188,7 +188,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1851504497}
+      - m_Target: {fileID: 664247746}
         m_MethodName: GetButtonInput
         m_Mode: 5
         m_Arguments:
@@ -196,10 +196,10 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 1
           m_FloatArgument: 0
-          m_StringArgument: Wind_horn
+          m_StringArgument: Wind_tail
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1851504497}
+      - m_Target: {fileID: 664247746}
         m_MethodName: SetSprite
         m_Mode: 1
         m_Arguments:
@@ -539,7 +539,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1851504497}
+      - m_Target: {fileID: 664247746}
         m_MethodName: GetButtonInput
         m_Mode: 5
         m_Arguments:
@@ -547,10 +547,10 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Fire_horn
+          m_StringArgument: Fire_tail
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1851504497}
+      - m_Target: {fileID: 664247746}
         m_MethodName: SetSprite
         m_Mode: 1
         m_Arguments:
@@ -894,6 +894,12 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 557052261}
+--- !u!114 &664247746 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114000013189221818, guid: 3fc61c30ef2792d4dbb2333dc541c673,
+    type: 2}
+  m_PrefabInternal: {fileID: 1826834589}
+  m_Script: {fileID: 11500000, guid: 1b9bb2b4467df7343b4b3a22136415fc, type: 3}
 --- !u!1 &876463135
 GameObject:
   m_ObjectHideFlags: 0
@@ -1091,7 +1097,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1851504497}
+      - m_Target: {fileID: 664247746}
         m_MethodName: GetButtonInput
         m_Mode: 5
         m_Arguments:
@@ -1099,10 +1105,10 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Wind_tail
+          m_StringArgument: Wind_horn
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1851504497}
+      - m_Target: {fileID: 664247746}
         m_MethodName: SetSprite
         m_Mode: 1
         m_Arguments:
@@ -1397,7 +1403,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1851504497}
+      - m_Target: {fileID: 664247746}
         m_MethodName: GetButtonInput
         m_Mode: 5
         m_Arguments:
@@ -1405,10 +1411,10 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Fire_tail
+          m_StringArgument: Fire_horn
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1851504497}
+      - m_Target: {fileID: 664247746}
         m_MethodName: SetSprite
         m_Mode: 1
         m_Arguments:
@@ -1626,7 +1632,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1851504497}
+      - m_Target: {fileID: 664247746}
         m_MethodName: GetButtonInput
         m_Mode: 5
         m_Arguments:
@@ -1634,10 +1640,10 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Water_tail
+          m_StringArgument: Water_horn
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1851504497}
+      - m_Target: {fileID: 664247746}
         m_MethodName: SetSprite
         m_Mode: 1
         m_Arguments:
@@ -2164,7 +2170,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1851504497}
+      - m_Target: {fileID: 664247746}
         m_MethodName: GetButtonInput
         m_Mode: 5
         m_Arguments:
@@ -2172,10 +2178,10 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 2
           m_FloatArgument: 0
-          m_StringArgument: Water_horn
+          m_StringArgument: Water_tail
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1851504497}
+      - m_Target: {fileID: 664247746}
         m_MethodName: SetSprite
         m_Mode: 1
         m_Arguments:
