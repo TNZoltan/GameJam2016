@@ -136,6 +136,52 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8c06c0f2a17305b43820dbe1432c8499, type: 2}
   m_IsPrefabParent: 0
+--- !u!1001 &484522756
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4000012524197894, guid: f0ee9e7626e37a640aeac756fea0dee2, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012524197894, guid: f0ee9e7626e37a640aeac756fea0dee2, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012524197894, guid: f0ee9e7626e37a640aeac756fea0dee2, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012524197894, guid: f0ee9e7626e37a640aeac756fea0dee2, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012524197894, guid: f0ee9e7626e37a640aeac756fea0dee2, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012524197894, guid: f0ee9e7626e37a640aeac756fea0dee2, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012524197894, guid: f0ee9e7626e37a640aeac756fea0dee2, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012524197894, guid: f0ee9e7626e37a640aeac756fea0dee2, type: 2}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011524702480, guid: f0ee9e7626e37a640aeac756fea0dee2, type: 2}
+      propertyPath: m_Name
+      value: Player (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: f0ee9e7626e37a640aeac756fea0dee2, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1001 &747089478
 Prefab:
   m_ObjectHideFlags: 0
@@ -228,6 +274,10 @@ Prefab:
     - target: {fileID: 1000011306485250, guid: 5645fca0d0a31474fb116edabd327374, type: 2}
       propertyPath: m_Name
       value: Player (2) - getting stuck is mainstream (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011306485250, guid: 5645fca0d0a31474fb116edabd327374, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5645fca0d0a31474fb116edabd327374, type: 2}
