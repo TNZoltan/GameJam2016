@@ -117,7 +117,7 @@ public class ChoicesHandler : MonoBehaviour {
 			scoreHandler.player1Score = 0;
 			scoreHandler.player2Score = 0;
 			scoreHandler.gameOver = false;
-			SceneManager.LoadScene ("MainMenu");
+			SceneManager.LoadScene ("WinningScene");
 		}
 		else {
 			collisionDone = false;

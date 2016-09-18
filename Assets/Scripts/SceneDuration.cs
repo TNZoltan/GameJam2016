@@ -14,7 +14,7 @@ public class SceneDuration: MonoBehaviour {
 		int result = ch.CalculateCollision ();
 
 		if (result != 0)
-			GameObject.Find ("EndRoundText").GetComponent<Text> ().text = "player " + result + "\nwon the round";
+			GameObject.Find ("EndRoundText").GetComponent<Text> ().text = "Player " + result + "\nwon the round";
 		else
 			GameObject.Find ("EndRoundText").GetComponent<Text> ().text = "It's a draw \nfor this round";
 
