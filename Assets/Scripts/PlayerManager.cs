@@ -42,6 +42,8 @@ public class PlayerManager : MonoBehaviour {
 			Debug.Log (s);
 		currentSprite = (GameObject) GameObject.Instantiate (sprites [0], transform);
 		currentSprite.transform.position = transform.position;
+		if (transform.position.x > 6)
+			transform.Rotate (new Vector3 (0, 180, 0));
 		sprites2 = new GameObject[3, 3];
 		int i = 0;
 		for (int j = 0; j<3; j++)
