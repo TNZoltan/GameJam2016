@@ -32,6 +32,26 @@ public class UnicornShowcase : MonoBehaviour {
 
 	public void SetHornParticle(string particle) 
 	{
+		GameObject.Destroy (tailParticle);
+		switch (particle)
+		{
+		case "Fire":
+			tailParticle = (GameObject)Instantiate (particleFire, tail.transform);	
+			tailParticle.transform.position = tail.transform.position;
+			break;
+		case "Water":
+			tailParticle = (GameObject)Instantiate (particleWater, tail.transform);	
+			tailParticle.transform.position = tail.transform.position;
+			break;
+		case "Wind":
+			tailParticle = (GameObject)Instantiate (particleWind, tail.transform);	
+			tailParticle.transform.position = tail.transform.position;
+			break;
+		}
+	}
+
+	public void SetTailParticle(string particle) 
+	{
 		GameObject.Destroy (hornParticle);
 		switch (particle)
 		{
@@ -47,26 +67,6 @@ public class UnicornShowcase : MonoBehaviour {
 		case "Wind":
 			hornParticle = (GameObject)Instantiate (particleWind, horn.transform);	
 			hornParticle.transform.position = horn.transform.position;
-			break;
-		}
-	}
-
-	public void SetTailParticle(string particle) 
-	{
-		GameObject.Destroy (tailParticle);
-		switch (particle)
-		{
-		case "Fire":
-			tailParticle = (GameObject)Instantiate (particleFire, tail.transform);	
-			tailParticle.transform.position = tail.transform.position;
-			break;
-		case "Water":
-			tailParticle = (GameObject)Instantiate (particleWater, tail.transform);	
-			tailParticle.transform.position = tail.transform.position;
-			break;
-		case "Wind":
-			tailParticle = (GameObject)Instantiate (particleWind, tail.transform);	
-			tailParticle.transform.position = tail.transform.position;
 			break;
 		}
 	}

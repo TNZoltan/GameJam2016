@@ -120,6 +120,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roundWinner: -1
+  spriteInfoHorn1: 0
+  spriteInfoHorn2: 0
+  spriteInfoTail1: 0
+  spriteInfoTail2: 0
   player1Horn: 
   player1Tail: 
   player2Horn: 
