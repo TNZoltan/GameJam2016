@@ -12,8 +12,11 @@ public class MenuManager : MonoBehaviour {
 
 	public void Rules()
 	{
-		Debug.Log ("We might just actually add a 'Rules' scene to teach people wow to play");
-	}
+        if (GameObject.Find("instructions").GetComponent<SpriteRenderer>().enabled)
+            GameObject.Find("instructions").GetComponent<SpriteRenderer>().enabled = false;
+        else
+            GameObject.Find("instructions").GetComponent<SpriteRenderer>().enabled = true;
+    }
 
 	public void Quit()
 	{
@@ -22,11 +25,10 @@ public class MenuManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	
-	}
+    }
 	
 	// Update is called once per frame
 	void Update () {
-	
+	    
 	}
 }
