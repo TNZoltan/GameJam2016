@@ -6,6 +6,9 @@ public class ChoicesHandler : MonoBehaviour {
 
 	public int roundWinner = -1;
 
+	public int spriteInfoHorn1, spriteInfoHorn2;
+	public int spriteInfoTail1, spriteInfoTail2;
+
 	public ScoreHandler scoreHandler;
 
 	//those are the info we'll actually keep in the "gameplay" scene
@@ -49,6 +52,8 @@ public class ChoicesHandler : MonoBehaviour {
 				player++;
 				hornChoice = null;
 				tailChoice = null;
+				spriteInfoHorn1 = GameObject.Find ("UnicornShowcase").GetComponent<PlayerManager> ().horn;
+				spriteInfoTail1 = GameObject.Find ("UnicornShowcase").GetComponent<PlayerManager> ().tail;
 				SceneManager.LoadScene ("RockPaperScissors2");
 			} else {
 				player2Horn = hornChoice;
@@ -56,6 +61,8 @@ public class ChoicesHandler : MonoBehaviour {
 				collisionDone = false;
 				player = 1;
 				ParseData ();
+				spriteInfoHorn2 = GameObject.Find ("UnicornShowcase").GetComponent<PlayerManager> ().horn;
+				spriteInfoTail2 = GameObject.Find ("UnicornShowcase").GetComponent<PlayerManager> ().tail;
 				SceneManager.LoadScene ("_MainScene");
 			}
 		}

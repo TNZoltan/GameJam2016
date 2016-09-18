@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerManager : MonoBehaviour {
 
@@ -8,7 +9,7 @@ public class PlayerManager : MonoBehaviour {
 
 	public GameObject currentSprite;
 
-	private int horn=-1, tail=-1;
+	public int horn=-1, tail=-1;
 
 	//for easier identification of the coordinates based on tail and horn
 	private GameObject[,] sprites2;
@@ -38,18 +39,37 @@ public class PlayerManager : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		sprites = Resources.LoadAll<GameObject> ("players");
-		foreach (GameObject s in sprites)
-			Debug.Log (s);
-		currentSprite = (GameObject) GameObject.Instantiate (sprites [0], transform);
-		currentSprite.transform.position = transform.position;
-		if (transform.position.x > 6)
-			transform.Rotate (new Vector3 (0, 180, 0));
-		sprites2 = new GameObject[3, 3];
-		int i = 0;
-		for (int j = 0; j<3; j++)
-			for (int k = 0; k<3; k++)
-				sprites2[j,k] = sprites [i++];
-	}
+		if (SceneManager.GetActiveScene ().name.Equals ("_MainScene"))
+		{
+			if (transform.position.x < 6) {
+				horn = GameObject.Find ("ChoiceHandler").GetComponent<ChoicesHandler> ().spriteInfoHorn1;
+				tail = GameObject.Find ("ChoiceHandler").GetComponent<ChoicesHandler> ().spriteInfoTail1;
+			} else {
+				horn = GameObject.Find ("ChoiceHandler").GetComponent<ChoicesHandler> ().spriteInfoHorn2;
+				tail = GameObject.Find ("ChoiceHandler").GetComponent<ChoicesHandler> ().spriteInfoTail2;
+			}
+			Debug.Log (horn+" "+tail);
+
+			sprites2 = new GameObject[3, 3];
+			int i = 0;
+			for (int j = 0; j<3; j++)
+				for (int k = 0; k<3; k++)
+					sprites2[j,k] = sprites [i++];
+
+			SetSprite ();
+		}
+		else {
+			currentSprite = (GameObject) GameObject.Instantiate (sprites [0], transform);
+			currentSprite.transform.position = transform.position;
+			if (transform.position.x > 6)
+				transform.Rotate (new Vector3 (0, 180, 0));
+			sprites2 = new GameObject[3, 3];
+			int i = 0;
+			for (int j = 0; j<3; j++)
+				for (int k = 0; k<3; k++)
+					sprites2[j,k] = sprites [i++];
+		}
+}
 
 	public void GetButtonInput(string button)
 	{
@@ -84,6 +104,9 @@ public class PlayerManager : MonoBehaviour {
 			GameObject.Destroy (currentSprite);
 			currentSprite = (GameObject)GameObject.Instantiate (sprites2 [horn, tail], transform);
 			currentSprite.transform.position = transform.position;
+			if (SceneManager.GetActiveScene ().name.Equals ("_MainScene") && (transform.position.x > 6) )
+				transform.Rotate (new Vector3 (0, 180, 0));
+			
 		}
 	}
 
