@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
-
+using UnityEngine.UI;
 
 public class MenuManager : MonoBehaviour {
 
@@ -12,10 +12,10 @@ public class MenuManager : MonoBehaviour {
 
 	public void Rules()
 	{
-        if (GameObject.Find("instructions").GetComponent<SpriteRenderer>().enabled)
-            GameObject.Find("instructions").GetComponent<SpriteRenderer>().enabled = false;
+        if (GameObject.Find("instructions").GetComponent<Image>().enabled)
+			GameObject.Find("instructions").GetComponent<Image>().enabled = false;
         else
-            GameObject.Find("instructions").GetComponent<SpriteRenderer>().enabled = true;
+			GameObject.Find("instructions").GetComponent<Image>().enabled = true;
     }
 
 	public void Quit()
