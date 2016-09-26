@@ -8,10 +8,10 @@ public class WinningScript : MonoBehaviour {
 	void Start () {
             ch = GameObject.Find("ChoiceHandler").GetComponent<ChoicesHandler>();
             if (ch.scoreHandler.player1Score > ch.scoreHandler.player2Score) {
-                GameObject.Find("Background").GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("p1background");
+				GameObject.Find("Background").GetComponent<Image>().sprite = Resources.Load<Sprite>("p1background");
                 GameObject.Find("WinText").GetComponent<Text>().text = "Congratulations Player 1, you won! \n You are the new king of Unicornland!";
             } else {
-                GameObject.Find("Background").GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("p2background"); ;
+                GameObject.Find("Background").GetComponent<Image>().sprite = Resources.Load<Sprite>("p2background"); ;
                 GameObject.Find("WinText").GetComponent<Text>().text = "Congratulations Player 2, you won! \n You are the new king of Unicornland!";
             }
         
